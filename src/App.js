@@ -1,7 +1,7 @@
 import { useState } from "react";
 import React from "react";
 import { ColorModeContext, useMode } from "./theme";
-import { CssBaseline, ThemeProvider } from "@mui/material";
+import { Box, CssBaseline, ThemeProvider } from "@mui/material";
 import Topbar from "./scenes/global/Topbar";
 import { Route, Routes } from "react-router-dom";
 import Sidebar from "./scenes/global/Sidebar";
@@ -13,7 +13,7 @@ function App() {
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <div className="content">
+        <Box>
           <Topbar />
           <Sidebar />
           <div className="main">
@@ -26,7 +26,7 @@ function App() {
 
             </Routes>
           </div>
-        </div>
+        </Box>
 
       </ThemeProvider>
     </ColorModeContext.Provider>

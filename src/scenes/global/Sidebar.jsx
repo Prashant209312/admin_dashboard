@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import { Avatar, Box, IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText, ListSubheader, Typography, useTheme } from "@mui/material";
-import { Link } from "react-router-dom";
+
 import { tokens } from "../../theme";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import PeopleOutlinedIcon from "@mui/icons-material/PeopleOutlined";
@@ -15,7 +15,6 @@ import PieChartOutlineOutlinedIcon from "@mui/icons-material/PieChartOutlineOutl
 import TimelineOutlinedIcon from "@mui/icons-material/TimelineOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
-// import { HomeOutlined } from "@mui/icons-material";
 
 
 
@@ -25,9 +24,9 @@ const Sidebar = () => {
 
 
     return (
-        <Box maxWidth={230} sx={{ bgcolor: "ActiveCaption", py: 3 }}>
+        <Box maxWidth={240} sx={{ bgcolor: "ActiveCaption", py: 3 }}>
 
-            <Avatar sx={{ ml: 'auto', mr: 'auto',mb:1 }}>H</Avatar>
+            <Avatar sx={{ ml: 'auto', mr: 'auto', mb: 1 }}>H</Avatar>
             <Typography textAlign='center' >Ed Roh</Typography>
             <Typography textAlign='center' >Prashant Sachan Admin</Typography>
 
